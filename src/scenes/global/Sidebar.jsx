@@ -17,7 +17,7 @@ const Sidebar = () => {
           src={profile}
           alt="profile"
           className="h-24 w-24 rounded-full border-4
-    border-emerald-400"
+    border-emerald-400 object-cover"
         />
       </div>
 
@@ -44,7 +44,7 @@ const Sidebar = () => {
             👋
           </motion.div>
         </div>
-        <p className="text-center text-emerald-400">Frontend Developer</p>
+        <p className="text-center text-emerald-400 font-semibold">Frontend Developer</p>
 
         {/* Items */}
         <div className="text-white mt-8">
