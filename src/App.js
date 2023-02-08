@@ -4,7 +4,7 @@ import Sidebar from './scenes/global/Sidebar';
 
 function App() {
   return (
-    <div className='flex h-screen'>
+    <div className='flex'>
       <Sidebar />
       <Dashboard />
     </div>

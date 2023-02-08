@@ -1,6 +1,16 @@
 import React from "react";
 import profile from "../../images/profile.jpg";
-import { FaHome } from "react-icons/fa";
+import {
+  FaHome,
+  FaUserAlt,
+  FaFileInvoice,
+  FaCalendar,
+  FaInfoCircle,
+  FaChartBar,
+  FaChartPie,
+  FaChartLine,
+  FaMapMarkedAlt,
+} from "react-icons/fa";
 import { RiContactsFill, RiTeamFill } from "react-icons/ri";
 import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
@@ -44,7 +54,9 @@ const Sidebar = () => {
             👋
           </motion.div>
         </div>
-        <p className="text-center text-emerald-400 font-semibold">Frontend Developer</p>
+        <p className="text-center text-emerald-400 font-semibold">
+          Frontend Developer
+        </p>
 
         {/* Items */}
         <div className="text-white mt-8">
@@ -63,27 +75,42 @@ const Sidebar = () => {
           </a>
 
           <a href="#" className="sidebar-item">
-            <FaHome />
-            <span>Dashboard</span>
+            <FaFileInvoice />
+            <span>Invoices Balances</span>
           </a>
           <h4 className="text-gray-400 mt-4">Pages</h4>
           <a href="#" className="sidebar-item">
-            <RiTeamFill />
-            <span>Manage Team</span>
+            <FaUserAlt />
+            <span>Profile</span>
           </a>
           <a href="#" className="sidebar-item">
-            <RiContactsFill />
-            <span>Contacts Information</span>
+            <FaCalendar />
+            <span>Calendar</span>
+          </a>
+
+          <a href="#" className="sidebar-item">
+            <FaInfoCircle />
+            <span>FAQ</span>
           </a>
 
           <h4 className="text-gray-400 mt-4">Charts</h4>
           <a href="#" className="sidebar-item">
-            <RiTeamFill />
-            <span>Manage Team</span>
+            <FaChartBar />
+            <span>Bar Chart</span>
           </a>
           <a href="#" className="sidebar-item">
-            <RiContactsFill />
-            <span>Contacts Information</span>
+            <FaChartPie />
+            <span>Pie Chart</span>
+          </a>
+
+          <a href="#" className="sidebar-item">
+            <FaChartLine />
+            <span>Line Chart</span>
+          </a>
+
+          <a href="#" className="sidebar-item">
+            <FaMapMarkedAlt />
+            <span>Geometry Chart</span>
           </a>
         </div>
       </nav>
