@@ -16,7 +16,7 @@ const Topbar = () => {
           <input
             type="text"
             placeholder="Search"
-            className="block first-line:w-full text-sm text-emerald-400 bg-slate-700
+            className="block first-line:w-full text-sm text-white bg-slate-700
             rounded-md py-2 pl-10 pr-4 placeholder-gray-400"
           />
         </div>

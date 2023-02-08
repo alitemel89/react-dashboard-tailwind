@@ -34,7 +34,7 @@ const Sidebar = () => {
       <nav className="mt-2">
         <div className="flex items-center justify-center space-x-2">
           <motion.h2
-            initial={{ opacity: 0.5, scale: 0.8 }}
+            initial={{ opacity: 0.5, scale: 0.2 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             className="text-2xl font-bold text-white uppercase text-center"
