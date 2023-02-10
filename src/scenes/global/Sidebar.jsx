@@ -1,38 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import profile from "../../images/profile.jpg";
-import {
-  FaHome,
-  FaUserAlt,
-  FaFileInvoice,
-  FaCalendar,
-  FaInfoCircle,
-  FaChartBar,
-  FaChartPie,
-  FaChartLine,
-  FaMapMarkedAlt,
-} from "react-icons/fa";
-import { RiContactsFill, RiTeamFill } from "react-icons/ri";
-import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
+import MenuItems from "../../components/MenuItems";
+import { HiMenuAlt3 } from "react-icons/hi";
 
 const Sidebar = () => {
+  const [open, setOpen] = useState(true);
   return (
-    <div className="w-72 bg-slate-700 px-8 py-4">
-      <div className="flex justify-between text-emerald-500 mb-4">
-        <h1 className="text-xl font-bold">ADMINIS</h1>
-        <BiMenuAltRight size={30} className="cursor-pointer" />
-      </div>
-      <div className="flex justify-center">
-        <img
-          src={profile}
-          alt="profile"
-          className="h-24 w-24 rounded-full border-4
+    <div className={`bg-slate-700 px-8 py-4 overflow-auto min-h-screen
+    ${
+      open ? "w-72" : "w-24"
+    } duration-500`}>
+      <div>
+        <div className="flex items-center justify-between">
+          <h1 className={`${!open && "hidden"} text-xl font-bold text-emerald-500`}>ADMINIS</h1>
+          <button className="text-emerald-400 cursor-pointer">
+            <HiMenuAlt3 size={25} onClick={() => setOpen(!open)} />
+          </button>
+        </div>
+        <div className={`${!open && "hidden"} flex justify-center`}>
+          <img
+            src={profile}
+            alt="profile"
+            className="h-24 w-24 rounded-full border-4
     border-emerald-400 object-cover"
-        />
+          />
+        </div>
       </div>
 
       <nav className="mt-2">
-        <div className="flex items-center justify-center space-x-2">
+        <div className={`${!open && "hidden"} flex items-center justify-center space-x-2`}>
           <motion.h2
             initial={{ opacity: 0.5, scale: 0.2 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -53,66 +50,13 @@ const Sidebar = () => {
           >
             👋
           </motion.div>
+
         </div>
-        <p className="text-center text-emerald-400 font-semibold">
+        <p className={`${!open && "hidden"} text-center text-emerald-400 font-semibold`}>
           Frontend Developer
         </p>
 
-        {/* Items */}
-        <div className="text-white mt-8">
-          <a href="#" className="sidebar-item">
-            <FaHome />
-            <span>Dashboard</span>
-          </a>
-          <h4 className="text-gray-400 mt-4">Data</h4>
-          <a href="#" className="sidebar-item">
-            <RiTeamFill />
-            <span>Manage Team</span>
-          </a>
-          <a href="#" className="sidebar-item">
-            <RiContactsFill />
-            <span>Contacts Information</span>
-          </a>
-
-          <a href="#" className="sidebar-item">
-            <FaFileInvoice />
-            <span>Invoices Balances</span>
-          </a>
-          <h4 className="text-gray-400 mt-4">Pages</h4>
-          <a href="#" className="sidebar-item">
-            <FaUserAlt />
-            <span>Profile</span>
-          </a>
-          <a href="#" className="sidebar-item">
-            <FaCalendar />
-            <span>Calendar</span>
-          </a>
-
-          <a href="#" className="sidebar-item">
-            <FaInfoCircle />
-            <span>FAQ</span>
-          </a>
-
-          <h4 className="text-gray-400 mt-4">Charts</h4>
-          <a href="#" className="sidebar-item">
-            <FaChartBar />
-            <span>Bar Chart</span>
-          </a>
-          <a href="#" className="sidebar-item">
-            <FaChartPie />
-            <span>Pie Chart</span>
-          </a>
-
-          <a href="#" className="sidebar-item">
-            <FaChartLine />
-            <span>Line Chart</span>
-          </a>
-
-          <a href="#" className="sidebar-item">
-            <FaMapMarkedAlt />
-            <span>Geometry Chart</span>
-          </a>
-        </div>
+        <MenuItems open={open} />
       </nav>
     </div>
   );

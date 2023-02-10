@@ -13,6 +13,7 @@ const Topbar = () => {
           <span className="absolute inset-y-0 left-0 flex items-center pl-3">
             <BiSearchAlt size={25} className="text-gray-200" />
           </span>
+
           <input
             type="text"
             placeholder="Search"
@@ -45,8 +46,10 @@ const Topbar = () => {
           <h4 className="text-gray-200 text-md">Welcome to your dashboard</h4>
         </div>
         <div>
-          <button className="bg-white flex items-center px-4 py-2
-          bg-gradient-to-r from-indigo-500 to-emerald-400 rounded-lg text-white">
+          <button
+            className="bg-white flex items-center px-4 py-2
+          bg-gradient-to-r from-indigo-500 to-emerald-400 rounded-lg text-white"
+          >
             Download reports
             <FiDownload size={20} className="ml-2" />
           </button>
