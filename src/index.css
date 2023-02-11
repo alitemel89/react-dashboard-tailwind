@@ -13,4 +13,10 @@ body {
   .sidebar-item {
     @apply flex items-center space-x-4 py-2 hover:bg-emerald-500 hover:px-4 hover:rounded-md transition-all my-2
   }
+
+  .blur-effect {
+  @apply absolute -inset-1 bg-gradient-to-r from-emerald-400
+         to-purple-500 rounded-lg blur-xl opacity-75 group-hover:opacity-100 
+        transition duration-1000 group-hover:duration-200
+  }
 }

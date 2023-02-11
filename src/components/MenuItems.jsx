@@ -34,10 +34,12 @@ const MenuItems = ({ open }) => {
       {menus.map((menu, i) => (
         <Link to={menu.link} key={i} className="sidebar-item">
           <div>{React.createElement(menu.icon, { size: 25 })}</div>
-          <motion.div initial={{ x: 50 }} animate={{ x: 0 }}>
-            <span className={`${!open && "hidden"}`}>
-              {menu.name}
-            </span>
+          <motion.div
+            initial={{ x: 50, opacity: 0, translateX: 50 }}
+            animate={{ x: 0, opacity: 1, translateX: 0 }}
+            transition={{ duration: 0.3, delay: i * 0.2 }}
+          >
+            <span className={`${!open && "hidden"}`}>{menu.name}</span>
           </motion.div>
         </Link>
       ))}

@@ -2,11 +2,11 @@ import React from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { IoMdNotifications, IoMdSettings } from "react-icons/io";
 import { FaUserAlt, FaMoon } from "react-icons/fa";
-import { FiDownload } from 'react-icons/fi';
+import { FiDownload } from "react-icons/fi";
 
 const Topbar = () => {
   return (
-    <header className="flex flex-col border-b border-gray-300 bg-slate-800 py-3">
+    <header className="flex flex-col border-b border-gray-300 bg-slate-800 py-3 sticky top-0 z-50">
       <div className="flex justify-between items-center py-2 mx-4 border-b border-gray-500">
         {/* SearchBar */}
         <div className="relative w-64">
@@ -47,8 +47,9 @@ const Topbar = () => {
         </div>
         <div>
           <button
-            className="bg-white flex items-center px-4 py-2
-          bg-gradient-to-r from-indigo-500 to-emerald-400 rounded-lg text-white"
+            className="flex items-center px-4 py-2
+          bg-gradient-to-r from-indigo-500 to-emerald-400 rounded-lg text-white
+          hover:bg-gradient-to-r hover:from-indigo-400 hover:to-emerald-300"
           >
             Download reports
             <FiDownload size={20} className="ml-2" />
