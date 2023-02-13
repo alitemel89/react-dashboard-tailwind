@@ -19,4 +19,11 @@ body {
          to-purple-500 rounded-lg blur-xl opacity-75 group-hover:opacity-100 
         transition duration-1000 group-hover:duration-200
   }
+
+  .btn {
+    @apply px-4 py-2
+    bg-gradient-to-r from-indigo-500 to-emerald-400 rounded-lg text-white
+    hover:bg-gradient-to-r hover:from-indigo-400 hover:to-emerald-300 
+    active:bg-gradient-to-r active:from-indigo-300 active:to-emerald-200
+  }
 }

@@ -47,9 +47,7 @@ const Topbar = () => {
         </div>
         <div>
           <button
-            className="flex items-center px-4 py-2
-          bg-gradient-to-r from-indigo-500 to-emerald-400 rounded-lg text-white
-          hover:bg-gradient-to-r hover:from-indigo-400 hover:to-emerald-300"
+            className="flex items-center btn"
           >
             Download reports
             <FiDownload size={20} className="ml-2" />
