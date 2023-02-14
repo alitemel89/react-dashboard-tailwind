@@ -26,4 +26,8 @@ body {
     hover:bg-gradient-to-r hover:from-indigo-400 hover:to-emerald-300 
     active:bg-gradient-to-r active:from-indigo-300 active:to-emerald-200
   }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
 }
