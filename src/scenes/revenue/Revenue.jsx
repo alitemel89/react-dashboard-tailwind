@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import LineChart from "../../components/LineChart";
 
 const Revenue = () => {
   return (
-    <div className='bg-red-400 w-3/5'>Revenue</div>
-  )
-}
+    <div className="bg-slate-700 w-3/5 rounded-lg h-72">
+      <h1 className="text-lg text-white py-2 px-4">Revenue Generated</h1>
+      <p className="text-xl text-emerald-400 px-4 font-bold">$ 48,586,455</p>
+      <LineChart />
+    </div>
+  );
+};
 
-export default Revenue
+export default Revenue;
