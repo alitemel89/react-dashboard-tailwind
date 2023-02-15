@@ -21,7 +21,7 @@ const Dashboard = () => {
         <div className="md:w-1/3 h-64 bg-slate-700 rounded-lg">
           <h1 className="text-lg text-white py-2 px-4">Campaign</h1>
           <div className="flex justify-center my-2">
-            <ProgressCircle progress={54} width={24} className="text-center" />
+            <ProgressCircle progress={54} width={100} height={100} />
           </div>
           <p className="text-emerald-300 text-center text-xl font-extrabold p-2">
             $48,552 revenue generated

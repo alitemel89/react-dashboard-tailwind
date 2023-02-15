@@ -14,7 +14,7 @@ const StatBox = ({ title, subtitle, icon, progress, increase }) => {
         <h6 className="text-lg text-emerald-400">{subtitle}</h6>
       </div>
       <div className="text-center">
-        <ProgressCircle progress={progress} width={16} />
+        <ProgressCircle progress={progress} width={75} height={75} />
         <p className="font-light text-indigo-200">{increase}</p>
       </div>
     </div>

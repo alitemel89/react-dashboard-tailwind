@@ -8,8 +8,8 @@ const Sidebar = () => {
   const [open, setOpen] = useState(true);
   return (
     <div
-      className={`bg-slate-700 px-8 py-4 overflow-auto min-h-screen
-    ${open ? "w-72" : "w-24"} duration-500`}
+      className={`bg-slate-700 p-4 overflow-auto min-h-screen
+    ${open ? "w-72" : "w-14"} duration-500`}
     >
       <div>
         <div className="flex items-center justify-between">
