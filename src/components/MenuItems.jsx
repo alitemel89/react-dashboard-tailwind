@@ -26,7 +26,7 @@ const MenuItems = ({ open }) => {
     { name: "Bar Chart", link: "/", icon: FaChartBar },
     { name: "Pie Chart", link: "/", icon: FaChartPie },
     { name: "Line Chart", link: "/", icon: FaChartLine },
-    { name: "Geometry Chart", link: "/", icon: FaMapMarkedAlt },
+    { name: "Geography Chart", link: "/", icon: FaMapMarkedAlt },
   ];
 
   return (

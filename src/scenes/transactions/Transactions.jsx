@@ -3,7 +3,7 @@ import { mockTransactions } from "../../data/mockData";
 
 const Transactions = () => {
   return (
-    <div className="w-2/5 h-72 overflow-auto scrollbar-hide rounded-lg">
+    <div className="md:w-2/5 h-72 overflow-auto scrollbar-hide rounded-lg w-full">
       <h2 className="text-lg text-white p-2">Recent Transactions</h2>
 
       <table className="table-auto min-w-full border-separate border-spacing-y-2">

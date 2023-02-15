@@ -2,9 +2,9 @@ import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-const ProgressCircle = ({ progress }) => {
+const ProgressCircle = ({ progress, width }) => {
   return (
-    <div className="w-16 h-16">
+    <div className={`w-${width}`}>
       <CircularProgressbar
         value={progress}
         text={`${progress}%`}
