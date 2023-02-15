@@ -4,12 +4,11 @@ import { mockBarData as data } from "../data/mockData";
 
 const BarChart = () => {
   return (
-    <div className="w-1/3 bg-slate-700 rounded-lg">
       <ResponsiveBar
         data={data}
         keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
         indexBy="country"
-        margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
+        margin={{ top: 10, right: 130, bottom: 100, left: 60 }}
         padding={0.3}
         valueScale={{ type: "linear" }}
         indexScale={{ type: "band", round: true }}
@@ -109,7 +108,6 @@ const BarChart = () => {
           );
         }}
       />
-    </div>
   );
 };
 

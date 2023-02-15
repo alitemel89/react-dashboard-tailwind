@@ -9,7 +9,7 @@ const Sidebar = () => {
   return (
     <div
       className={`bg-slate-700 p-4 overflow-auto min-h-screen
-    ${open ? "w-72" : "w-14"} duration-500`}
+    ${open ? "w-72" : "w-14"} transition duration-500`}
     >
       <div>
         <div className="flex items-center justify-between">
