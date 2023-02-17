@@ -5,11 +5,11 @@ import MenuItems from "../../components/MenuItems";
 import { HiMenuAlt3 } from "react-icons/hi";
 
 const Sidebar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <div
-      className={`bg-slate-700 p-4 overflow-auto min-h-screen
-    ${open ? "w-72" : "w-14"} transition duration-500`}
+      className={`bg-slate-700 p-4 shadow-lg shadow-indigo-300/50
+    ${open ? "w-72 min-h-screen absolute inset-0 z-50 overflow-auto scrollbar-hide" : "w-14"} transition duration-500`}
     >
       <div>
         <div className="flex items-center justify-between">

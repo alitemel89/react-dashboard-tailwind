@@ -17,7 +17,7 @@ const Dashboard = () => {
         <Transactions />
       </div>
       {/* Campaign */}
-      <div className="md:flex mx-2 gap-4 mt-4 mb-12">
+      <div className="md:flex md:flex-row mx-2 md:gap-4 mt-4 mb-12 flex flex-col gap-2">
         <div className="md:w-1/3 h-80 bg-slate-700 rounded-lg">
           <h1 className="text-lg text-white py-2 px-4">Campaign</h1>
           <div className="flex justify-center my-2">

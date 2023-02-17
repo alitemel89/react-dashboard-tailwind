@@ -6,7 +6,7 @@ import { FiDownload } from "react-icons/fi";
 
 const Topbar = () => {
   return (
-    <header className="md:flex flex-col border-b border-gray-300 bg-slate-800 py-3 sticky top-0 z-50">
+    <header className="md:flex flex-col border-b border-gray-300 bg-slate-800 py-3">
       <div className="md:flex justify-between items-center py-2 mx-4 border-b border-gray-500">
         {/* SearchBar */}
         <div className="relative w-72">
