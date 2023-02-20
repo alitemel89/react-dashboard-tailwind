@@ -8,7 +8,7 @@ const Sidebar = () => {
   const [open, setOpen] = useState(false);
   return (
     <div
-      className={`bg-slate-700 p-4 shadow-lg shadow-indigo-300/50
+      className={`dark:bg-slate-700 bg-slate-200 p-4 shadow-xl dark:shadow-indigo-300/50
     ${open ? "w-72 min-h-screen absolute inset-0 z-50 overflow-auto scrollbar-hide" : "w-14"} transition duration-500`}
     >
       <div>
@@ -16,7 +16,7 @@ const Sidebar = () => {
           <h1
             className={`${
               !open && "hidden"
-            } text-xl font-bold text-emerald-500`}
+            } text-xl font-bold dark:text-emerald-500`}
           >
             ADMINIS
           </h1>
@@ -27,7 +27,7 @@ const Sidebar = () => {
             <div
               className="blur-effect"
             ></div>
-            <button className="text-emerald-400">
+            <button className="dark:text-emerald-400">
               <HiMenuAlt3 size={28} />
             </button>
           </div>
@@ -37,7 +37,7 @@ const Sidebar = () => {
             src={profile}
             alt="profile"
             className="h-24 w-24 rounded-full border-4
-    border-emerald-400 object-cover"
+    dark:border-emerald-400 object-cover"
           />
         </div>
       </div>
@@ -52,7 +52,7 @@ const Sidebar = () => {
             initial={{ opacity: 0.5, scale: 0.2 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            className="text-2xl font-bold text-white uppercase 
+            className="text-2xl font-bold dark:text-white uppercase 
             text-center"
           >
             Welcome Ali
@@ -73,7 +73,7 @@ const Sidebar = () => {
         <p
           className={`${
             !open && "hidden"
-          } text-center text-emerald-400 font-semibold`}
+          } text-center dark:text-emerald-400 font-semibold`}
         >
           Frontend Developer
         </p>
