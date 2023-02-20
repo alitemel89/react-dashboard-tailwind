@@ -16,7 +16,7 @@ const Sidebar = () => {
           <h1
             className={`${
               !open && "hidden"
-            } text-xl font-bold dark:text-emerald-500`}
+            } text-xl font-bold dark:text-emerald-500 text-indigo-700`}
           >
             ADMINIS
           </h1>
@@ -27,7 +27,7 @@ const Sidebar = () => {
             <div
               className="blur-effect"
             ></div>
-            <button className="dark:text-emerald-400">
+            <button className="dark:text-emerald-400 text-indigo-700">
               <HiMenuAlt3 size={28} />
             </button>
           </div>
@@ -53,7 +53,7 @@ const Sidebar = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             className="text-2xl font-bold dark:text-white uppercase 
-            text-center"
+            text-center text-indigo-500"
           >
             Welcome Ali
           </motion.h2>
@@ -73,7 +73,7 @@ const Sidebar = () => {
         <p
           className={`${
             !open && "hidden"
-          } text-center dark:text-emerald-400 font-semibold`}
+          } text-center dark:text-emerald-400 font-semibold text-emerald-600`}
         >
           Frontend Developer
         </p>
