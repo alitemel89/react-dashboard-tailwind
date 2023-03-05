@@ -47,7 +47,7 @@ const Contacts = () => {
     },
   ];
   return (
-    <div className="flex-1">
+    <div className="flex-1 min-w-0">
       <Topbar />
       <div className="dark:bg-slate-800 h-screen">
         <div className="dark:bg-slate-700 p-2 mx-4 rounded-md">
@@ -57,7 +57,7 @@ const Contacts = () => {
           <h4 className="dark:text-gray-200 text-md text-emerald-900 mb-4">
             Managing the team members
           </h4>
-          <div className="max-w-full h-96 dark:bg-slate-700 bg-slate-100">
+          <div className="w-full h-96 dark:bg-slate-700 bg-slate-100">
             <DataGrid
               rows={mockDataContacts}
               columns={columns}
