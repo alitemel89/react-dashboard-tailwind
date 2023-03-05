@@ -18,7 +18,7 @@ const MenuItems = ({ open }) => {
   const menus = [
     { name: "Dashboard", link: "/", icon: FaHome },
     { name: "Manage Team", link: "/", icon: RiTeamFill },
-    { name: "Contacts Information", link: "/", icon: RiContactsFill },
+    { name: "Contacts Information", link: "/contacts", icon: RiContactsFill },
     { name: "Invoices Balances", link: "/", icon: FaFileInvoice },
     { name: "Profile", link: "/", icon: FaUserAlt },
     { name: "Calendar", link: "/", icon: FaCalendar },
