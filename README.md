@@ -1,3 +1,12 @@
+![dark](https://user-images.githubusercontent.com/64444827/220553400-17b18708-99b6-4885-bc6d-ceb2c48f8f4a.PNG)
+
+
+![light](https://user-images.githubusercontent.com/64444827/220553425-009681e1-4573-4f7e-a30c-0d2c6ef0b0b0.PNG)
+
+
+![image](https://user-images.githubusercontent.com/64444827/223052587-9df2fc35-0980-4d3c-a117-3746ebd45af6.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -40,14 +49,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
-
-![dark](https://user-images.githubusercontent.com/64444827/220553400-17b18708-99b6-4885-bc6d-ceb2c48f8f4a.PNG)
-
-
-![light](https://user-images.githubusercontent.com/64444827/220553425-009681e1-4573-4f7e-a30c-0d2c6ef0b0b0.PNG)
-
-
-![image](https://user-images.githubusercontent.com/64444827/223052587-9df2fc35-0980-4d3c-a117-3746ebd45af6.png)
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
